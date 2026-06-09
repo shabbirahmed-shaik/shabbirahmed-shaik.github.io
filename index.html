@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Shabbir Ahmed Shaik — Technical Program Manager</title>
+<meta name="description" content="Technical Program Manager with 20 years of experience delivering enterprise-scale platforms across banking, healthcare, and manufacturing."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#070B17;--bg2:#0C1225;--bg3:#111827;--card:#0F1729;
+  --border:rgba(74,158,255,0.12);--border-h:rgba(74,158,255,0.4);
+  --accent:#4A9EFF;--accent2:#00D4B4;--navy:#1B3A6B;
+  --text:#E8EDF5;--muted:#8892A4;--dim:#3D4A5C;
+  --ff-head:'Fraunces',serif;--ff-body:'DM Sans',sans-serif;--ff-mono:'JetBrains Mono',monospace;
+  --ease:cubic-bezier(0.22,1,0.36,1);--radius:12px;
+}
+
+html[data-theme="light"]{
+  --bg:#FFFFFF;--bg2:#F5F8FC;--bg3:#E8EDB5;--card:#FFFFFF;
+  --border:rgba(27,58,107,0.12);--border-h:rgba(27,58,107,0.25);
+  --accent:#1B5FD1;--accent2:#00897B;--navy:#1B3A6B;
+  --text:#0D1117;--muted:#57606A;--dim:#B1BAC4;
+}
+html{scroll-behavior:smooth;font-size:16px;transition:background-color 0.4s, color 0.4s}
+body{background:var(--bg);color:var(--text);font-family:var(--ff-body);line-height:1.7;overflow-x:hidden;transition:background-color 0.4s, color 0.4s}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--navy);border-radius:2px}
+::selection{background:rgba(74,158,255,0.25);color:var(--text)}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 4rem;transition:all 0.4s var(--ease)}
+nav.scrolled{background:rgba(7,11,23,0.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0.9rem 4rem}
+html[data-theme="light"] nav.scrolled{background:rgba(255,255,255,0.85)}
+.nav-logo{font-family:var(--ff-head);font-weight:800;font-size:1.1rem;letter-spacing:0.05em;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:0.5rem}
+.nav-logo span{width:36px;height:36px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-size:0.85rem;font-weight:800;color:#070B17}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:0.95rem;font-weight:500;letter-spacing:0.03em;transition:color 0.2s}
+.nav-links a:hover{color:var(--accent)}
+.nav-right{display:flex;align-items:center;gap:1.2rem}
+.theme-toggle{
+  width:48px;height:28px;border-radius:14px;
+  background:var(--dim);border:1px solid var(--border);
+  padding:2px;cursor:pointer;display:flex;align-items:center;
+  transition:background 0.3s;position:relative;
+}
+.theme-toggle:hover{background:var(--muted)}
+.theme-toggle-dot{
+  width:24px;height:24px;border-radius:50%;
+  background:var(--text);transition:transform 0.3s var(--ease);
+  display:flex;align-items:center;justify-content:center;font-size:0.65rem;
+}
+html[data-theme="light"] .theme-toggle-dot{transform:translateX(20px)}
+.nav-cta{
+  padding:0.5rem 1.2rem;border-radius:6px;border:1px solid var(--border-h);color:var(--accent);font-size:0.9rem;font-weight:600;text-decoration:none;transition:all 0.2s;
+}
+.nav-cta:hover{background:var(--accent);color:#070B17}
+
+/* HERO */
+#hero{position:relative;height:100vh;min-height:700px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+#hero-canvas{position:absolute;inset:0;width:100%;height:100%}
+.hero-inner{position:relative;z-index:2;max-width:900px;margin:0 auto;padding:0 2rem;text-align:center}
+.hero-badge{display:inline-flex;align-items:center;gap:0.5rem;padding:0.35rem 1rem;border-radius:100px;border:1px solid rgba(0,212,180,0.3);background:rgba(0,212,180,0.07);color:var(--accent2);font-size:0.85rem;font-weight:500;font-family:var(--ff-mono);letter-spacing:0.05em;margin-bottom:1.8rem;animation:fadeUp 0.8s var(--ease) 0.2s both}
+.hero-badge::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent2);box-shadow:0 0 8px var(--accent2);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.5;transform:scale(0.8)}}
+.hero-name{font-family:var(--ff-head);font-weight:800;font-size:clamp(2.8rem,7vw,5.5rem);line-height:1.0;letter-spacing:-0.01em;font-optical-sizing:auto;color:var(--text);margin-bottom:0.4rem;animation:fadeUp 0.8s var(--ease) 0.4s both}
+.hero-name .accent{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-title{font-family:var(--ff-head);font-weight:400;font-size:clamp(1rem,2.5vw,1.4rem);color:var(--muted);letter-spacing:0.05em;text-transform:uppercase;margin-bottom:1.5rem;animation:fadeUp 0.8s var(--ease) 0.5s both}
+.hero-typewriter{font-family:var(--ff-mono);font-size:clamp(1rem,2vw,1.2rem);color:var(--accent);min-height:1.8em;margin-bottom:2.5rem;animation:fadeUp 0.8s var(--ease) 0.6s both}
+.cursor{display:inline-block;width:2px;height:1.1em;background:var(--accent);margin-left:2px;vertical-align:text-bottom;animation:blink 0.9s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+.hero-stats{display:flex;justify-content:center;gap:3rem;margin-bottom:3rem;flex-wrap:wrap;animation:fadeUp 0.8s var(--ease) 0.7s both}
+.hero-stat{text-align:center}
+.hero-stat .num{font-family:var(--ff-head);font-weight:800;font-size:clamp(1.6rem,3.5vw,2.2rem);background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block}
+.hero-stat .label{font-size:0.8rem;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase}
+.hero-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;animation:fadeUp 0.8s var(--ease) 0.8s both}
+.btn-primary{padding:0.85rem 2rem;border-radius:8px;background:linear-gradient(135deg,var(--accent),#2D7DD2);color:#070B17;font-weight:700;font-size:0.95rem;text-decoration:none;transition:all 0.2s;box-shadow:0 4px 20px rgba(74,158,255,0.3)}
+html[data-theme="light"] .btn-primary{color:#FFFFFF}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(74,158,255,0.45)}
+html[data-theme="light"] .btn-primary:hover{box-shadow:0 6px 20px rgba(27,95,209,0.25)}
+.btn-secondary{padding:0.85rem 2rem;border-radius:8px;border:1px solid var(--border-h);color:var(--accent);font-weight:600;font-size:0.95rem;text-decoration:none;transition:all 0.2s;background:rgba(74,158,255,0.04)}
+.btn-secondary:hover{background:rgba(74,158,255,0.1);transform:translateY(-2px)}
+.hero-scroll{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);color:var(--dim);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:0.5rem;animation:fadeUp 1s var(--ease) 1.2s both}
+.scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,var(--accent),transparent);animation:scrollLine 1.5s ease-in-out infinite}
+@keyframes scrollLine{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* SECTIONS */
+section{padding:4rem 0}
+.container{max-width:1100px;margin:0 auto;padding:0 2rem}
+.section-label{font-family:var(--ff-mono);font-size:0.82rem;color:var(--accent2);letter-spacing:0.15em;text-transform:uppercase;display:block;margin-bottom:0.75rem}
+.section-title{font-family:var(--ff-head);font-weight:800;font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.1;letter-spacing:-0.02em;margin-bottom:1rem}
+.section-title span{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:italic}
+.section-sub{color:var(--muted);max-width:560px;font-size:1.1rem;line-height:1.75}
+
+/* ABOUT */
+#about{background:var(--bg2)}
+.about-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:5rem;align-items:center;margin-top:2rem}
+.about-photo-wrap{position:relative}
+.about-photo{width:100%;max-width:320px;aspect-ratio:1;border-radius:20px;background:linear-gradient(135deg,var(--navy),var(--bg3));border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:var(--ff-head);font-size:5rem;font-weight:800;color:rgba(74,158,255,0.2);position:relative;overflow:hidden}
+html[data-theme="light"] .about-photo{background:linear-gradient(135deg,#E8EDB5,#F0F3F8);color:rgba(27,58,107,0.15)}
+.about-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 50%,rgba(0,212,180,0.05))}
+html[data-theme="light"] .about-photo::after{background:linear-gradient(135deg,transparent 50%,rgba(0,137,123,0.08))}
+.about-photo-badge{position:absolute;bottom:-12px;right:-12px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#070B17;font-weight:700;font-size:0.78rem;padding:0.5rem 1rem;border-radius:100px;font-family:var(--ff-mono);white-space:nowrap}
+.about-text p{color:var(--muted);line-height:1.85;margin-bottom:1.3rem;font-size:1.05rem}
+.about-text p strong{color:var(--text)}
+.dual-track{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2rem}
+.track-card{padding:1.2rem;border-radius:10px;border:1px solid var(--border);background:var(--card)}
+.track-icon{font-size:1.4rem;margin-bottom:0.5rem}
+.track-card h4{font-family:var(--ff-head);font-size:0.92rem;font-weight:700;margin-bottom:0.4rem;color:var(--accent)}
+.track-card p{font-size:0.92rem;color:var(--muted);line-height:1.6}
+
+/* EXPERIENCE */
+#experience{background:var(--bg)}
+.timeline{position:relative;margin-top:2rem;padding-left:2rem}
+.timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--accent),rgba(74,158,255,0.1))}
+.timeline-item{position:relative;padding:0 0 3.5rem 2.5rem}
+.timeline-dot{position:absolute;left:-8px;top:4px;width:16px;height:16px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(74,158,255,0.15),0 0 16px rgba(74,158,255,0.4)}
+.timeline-dot.teal{background:var(--accent2);box-shadow:0 0 0 4px rgba(0,212,180,0.15),0 0 16px rgba(0,212,180,0.4)}
+.timeline-meta{font-family:var(--ff-mono);font-size:0.82rem;color:var(--accent2);letter-spacing:0.08em;margin-bottom:0.4rem}
+.timeline-role{font-family:var(--ff-head);font-weight:700;font-size:1.3rem;color:var(--text);margin-bottom:0.2rem}
+.timeline-company{color:var(--muted);font-size:1rem;margin-bottom:0.15rem}
+.timeline-client{font-size:0.9rem;color:var(--accent);font-family:var(--ff-mono);margin-bottom:1rem}
+.timeline-content{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;transition:border-color 0.3s}
+.timeline-content:hover{border-color:var(--border-h)}
+.exp-subsection{font-size:0.82rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent2);font-family:var(--ff-mono);margin:1rem 0 0.7rem}
+.exp-subsection:first-child{margin-top:0}
+.exp-bullets{list-style:none;display:flex;flex-direction:column;gap:0.65rem}
+.exp-bullets li{font-size:1rem;color:var(--muted);line-height:1.72;padding-left:1.3rem;position:relative}
+.exp-bullets li::before{content:'▸';position:absolute;left:0;color:var(--accent);font-size:0.75rem;top:0.25em}
+.exp-bullets li strong{color:var(--text)}
+
+/* TECH ICON TAGS — timeline */
+.tech-tags{display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1.3rem;align-items:center}
+.tech-icon-tag{width:38px;height:38px;border-radius:7px;background:rgba(74,158,255,0.06);border:1px solid rgba(74,158,255,0.15);display:inline-flex;align-items:center;justify-content:center;position:relative;cursor:default;transition:all 0.2s}
+.tech-icon-tag:hover{background:rgba(74,158,255,0.13);border-color:rgba(74,158,255,0.4)}
+.tech-icon-tag i{font-size:1.3rem;display:block}
+.tech-icon-tag::after,.case-icon-tag::after,.proj-icon-tag::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:var(--bg3);color:var(--text);font-size:0.72rem;padding:0.28rem 0.6rem;border-radius:5px;white-space:nowrap;border:1px solid var(--border-h);font-family:var(--ff-mono);z-index:20;pointer-events:none;opacity:0;transition:opacity 0.15s}
+.tech-icon-tag:hover::after,.case-icon-tag:hover::after,.proj-icon-tag:hover::after{opacity:1}
+.tech-text-tag{padding:0.3rem 0.7rem;border-radius:6px;background:rgba(74,158,255,0.07);border:1px solid rgba(74,158,255,0.15);font-family:var(--ff-mono);font-size:0.78rem;color:var(--accent)}
+
+/* CASE STUDIES */
+#casestudies{background:var(--bg2)}
+.cases-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:2rem}
+.case-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:all 0.35s var(--ease);position:relative}
+.case-card:hover{border-color:var(--border-h);transform:translateY(-4px);box-shadow:0 20px 50px rgba(0,0,0,0.4)}
+html[data-theme="light"] .case-card:hover{box-shadow:0 12px 32px rgba(27,58,107,0.12)}
+.case-top{height:5px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.case-card:nth-child(2) .case-top{background:linear-gradient(90deg,var(--accent2),#9B6DFF)}
+.case-card:nth-child(3) .case-top{background:linear-gradient(90deg,#FF6B6B,var(--accent))}
+.case-card:nth-child(4) .case-top{background:linear-gradient(90deg,var(--accent2),#4A9EFF)}
+.case-body{padding:1.8rem}
+.case-icon{font-size:1.9rem;margin-bottom:0.8rem}
+.case-tag{font-family:var(--ff-mono);font-size:0.78rem;letter-spacing:0.1em;color:var(--accent2);text-transform:uppercase;margin-bottom:0.5rem;display:block}
+.case-title{font-family:var(--ff-head);font-weight:700;font-size:1.2rem;margin-bottom:0.75rem;line-height:1.3}
+.case-desc{font-size:1.05rem;color:var(--muted);line-height:1.75;margin-bottom:1.3rem}
+.case-metrics{display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.3rem}
+.metric-chip{padding:0.32rem 0.78rem;border-radius:100px;background:rgba(74,158,255,0.08);border:1px solid rgba(74,158,255,0.2);font-family:var(--ff-mono);font-size:0.8rem;color:var(--accent);font-weight:500}
+.metric-chip.green{background:rgba(0,212,180,0.08);border-color:rgba(0,212,180,0.2);color:var(--accent2)}
+.case-techs{display:flex;flex-wrap:wrap;gap:0.45rem;align-items:center}
+.case-icon-tag{width:34px;height:34px;border-radius:6px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);display:inline-flex;align-items:center;justify-content:center;position:relative;cursor:default;transition:all 0.2s}
+.case-icon-tag:hover{border-color:rgba(74,158,255,0.3)}
+.case-icon-tag i{font-size:1.1rem}
+.case-text-tag{padding:0.2rem 0.55rem;border-radius:4px;background:var(--bg3);font-size:0.78rem;color:var(--muted);font-family:var(--ff-mono)}
+
+/* STAR Format Sections */
+.star-section{margin-top:1.2rem;padding-top:1rem;border-top:1px solid var(--border)}
+.star-label{font-family:var(--ff-mono);font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent2);margin-bottom:0.4rem;display:block}
+.star-content{font-size:0.95rem;line-height:1.7;color:var(--muted)}
+.star-content strong{color:var(--text)}
+#projects{background:var(--bg)}
+.projects-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2rem}
+.project-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;transition:all 0.3s var(--ease);position:relative;overflow:hidden}
+.project-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:0;transition:opacity 0.3s}
+.project-card:hover::before{opacity:1}
+.project-card:hover{border-color:var(--border-h);transform:translateY(-3px);box-shadow:0 16px 40px rgba(0,0,0,0.35)}
+.proj-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:1rem}
+.proj-icon{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,rgba(74,158,255,0.15),rgba(0,212,180,0.1));border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.5rem}
+.proj-badge{font-family:var(--ff-mono);font-size:0.72rem;color:var(--accent2);border:1px solid rgba(0,212,180,0.2);padding:0.2rem 0.5rem;border-radius:4px;background:rgba(0,212,180,0.05)}
+.proj-name{font-family:var(--ff-head);font-weight:700;font-size:1.2rem;margin-bottom:0.3rem}
+.proj-subtitle{font-family:var(--ff-mono);font-size:0.82rem;color:var(--accent);margin-bottom:0.9rem}
+.proj-desc{font-size:1.05rem;color:var(--muted);line-height:1.75;margin-bottom:1.3rem}
+.proj-tags{display:flex;flex-wrap:wrap;gap:0.4rem;align-items:center}
+.proj-icon-tag{width:34px;height:34px;border-radius:6px;background:var(--bg2);border:1px solid var(--border);display:inline-flex;align-items:center;justify-content:center;position:relative;cursor:default;transition:all 0.2s}
+.proj-icon-tag:hover{border-color:var(--border-h)}
+.proj-icon-tag i{font-size:1.1rem}
+.proj-text-tag{padding:0.28rem 0.7rem;border-radius:5px;background:var(--bg2);border:1px solid var(--border);font-size:0.78rem;color:var(--muted);font-family:var(--ff-mono)}
+
+/* SKILLS */
+#skills{background:var(--bg2)}
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2rem;margin-top:2rem}
+.skill-group{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1.4rem;transition:border-color 0.3s}
+.skill-group:hover{border-color:var(--border-h)}
+.skill-group-title{font-family:var(--ff-mono);font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent2);margin-bottom:0.9rem;display:flex;align-items:center;gap:0.5rem}
+.skill-group-title::after{content:'';flex:1;height:1px;background:var(--border)}
+.skill-tags{display:flex;flex-wrap:wrap;gap:0.45rem}
+.skill-pill{padding:0.32rem 0.75rem;border-radius:6px;background:var(--bg2);border:1px solid var(--border);font-size:0.95rem;color:var(--muted);transition:all 0.2s;cursor:default}
+.skill-pill:hover{background:rgba(74,158,255,0.08);border-color:rgba(74,158,255,0.3);color:var(--accent);transform:translateY(-1px)}
+
+/* CERTIFICATIONS */
+#certifications{background:var(--bg)}
+.certs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;margin-top:2rem}
+.cert-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1.6rem;display:flex;flex-direction:column;gap:0.6rem;transition:all 0.3s}
+.cert-card:hover{border-color:var(--border-h);transform:translateY(-3px)}
+.cert-icon{font-size:1.7rem}
+.cert-name{font-family:var(--ff-head);font-weight:700;font-size:1.05rem;line-height:1.35}
+.cert-issuer{font-family:var(--ff-mono);font-size:0.8rem;color:var(--accent2)}
+
+/* CONTACT */
+#contact{background:var(--bg2)}
+.contact-inner{text-align:center;max-width:620px;margin:0 auto;padding-top:1rem}
+.contact-inner .section-sub{margin:0 auto 3rem;font-size:1.1rem}
+.contact-links{display:flex;justify-content:center;gap:1.2rem;flex-wrap:wrap}
+.contact-link{display:flex;align-items:center;gap:0.6rem;padding:0.9rem 1.6rem;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--muted);text-decoration:none;font-size:1rem;transition:all 0.25s}
+.contact-link:hover{border-color:var(--border-h);color:var(--accent);background:rgba(74,158,255,0.05);transform:translateY(-2px)}
+.contact-link svg{flex-shrink:0}
+
+/* FOOTER */
+footer{background:var(--bg);border-top:1px solid var(--border);padding:2rem;text-align:center;font-size:0.82rem;color:var(--dim);font-family:var(--ff-mono)}
+footer span{color:var(--accent2)}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity 0.7s var(--ease),transform 0.7s var(--ease)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:0.1s}.reveal-delay-2{transition-delay:0.2s}
+.reveal-delay-3{transition-delay:0.3s}.reveal-delay-4{transition-delay:0.4s}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  nav{padding:1rem 1.5rem}nav.scrolled{padding:0.8rem 1.5rem}.nav-links{display:none}
+  .about-grid{grid-template-columns:1fr;gap:2.5rem}.about-photo{max-width:200px}
+  .projects-grid{grid-template-columns:1fr}.cases-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){section{padding:4rem 0}.hero-stats{gap:1.5rem}.dual-track{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo"><span>SA</span>SHABBIR SHAIK</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li>
+    <li><a href="#casestudies">Case Studies</a></li><li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"><span class="theme-toggle-dot">🌙</span></button>
+    <a href="resume.pdf" download="ShabbirAhmedShaik_Resume.pdf" class="nav-cta" style="font-size:0.8rem;padding:0.45rem 0.9rem">⬇ Resume</a>
+    <a href="mailto:shabbeer.shaik@outlook.com" class="nav-cta">Hire Me</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-inner">
+    <div class="hero-badge">Open to Senior TPM Opportunities</div>
+    <h1 class="hero-name"><span class="accent">Shabbir</span> Ahmed Shaik</h1>
+    <p class="hero-title">&nbsp;Technical Program Manager &nbsp;|&nbsp; Systems Modernization |&nbsp; AI Orchestration</p>
+    <p class="hero-typewriter"><span id="typewriter"></span><span class="cursor"></span></p>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="num" data-count="20">0</span><span class="label">Years Experience</span></div>
+      <div class="hero-stat"><span class="num" data-prefix="$" data-suffix="M+" data-count="10">0</span><span class="label">Cost Savings Delivered</span></div>
+      <div class="hero-stat"><span class="num" data-suffix="K/min" data-count="300">0</span><span class="label">Req/Min Peak Throughput</span></div>
+      <div class="hero-stat"><span class="num" data-suffix="+" data-count="100">0</span><span class="label">Engineers Led</span></div>
+    </div>
+    <div class="hero-actions">
+      <a href="#casestudies" class="btn-primary">View Case Studies</a>
+      <a href="https://www.linkedin.com/in/shabbir-ahmed-shaik-9a43192b/" target="_blank" class="btn-secondary">LinkedIn Profile</a>
+      <a href="resume.pdf" download="ShabbirAhmedShaik_Resume.pdf" class="btn-secondary">⬇ Download Resume</a>
+    </div>
+  </div>
+  <div class="hero-scroll">Scroll<div class="scroll-line"></div></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-photo-wrap reveal">
+        <img src="img/profile.png" alt="Shabbir Ahmed Shaik" style="width:100%;max-width:320px;aspect-ratio:1;border-radius:20px;border:1px solid var(--border);object-fit:cover;display:block"/>
+        <div class="about-photo-badge">20 Yrs · Austin, TX</div>
+      </div>
+      <div class="about-text reveal reveal-delay-1">
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">Program leader.<br/><span>Platform builder.</span></h2>
+        <p>I'm a Technical Program Manager with two decades of experience turning complex, high-stakes technical programs into shipped, measurable outcomes. My work spans <strong>Identity & Access Management modernization</strong>, cloud-native platform delivery, and enterprise-scale application transformation across banking, healthcare, and manufacturing.</p>
+        <p>What sets me apart: I don't just manage programs — I understand the architecture, write the specs, and when needed, get into the code. I've built AI agents, shipped production features, and established engineering best practices alongside the teams I lead.</p>
+        <div class="dual-track">
+          <div class="track-card"><div class="track-icon">📋</div><h4>Program Manager</h4><p>PI planning, roadmaps, stakeholder alignment, NYDFS compliance, $M-scale budget ownership</p></div>
+          <div class="track-card"><div class="track-icon">⚡</div><h4>Hands-On Builder</h4><p>.NET Core, AI agents, Angular, Spring Boot, OAuth2/IAM implementations, CI/CD pipelines</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <span class="section-label reveal">Career History</span>
+    <h2 class="section-title reveal">Where I've <span>delivered.</span></h2>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-meta">Nov 2015 – Present · ~9 Years</div>
+        <div class="timeline-role">Technical Program Manager</div>
+        <div class="timeline-company">Mphasis Corporation</div>
+        <div class="timeline-client">⟶ Embedded at Charles Schwab Corporation, Austin TX</div>
+        <div class="timeline-content">
+          <p>
+            <li><b>Strategic Leadership:</b> Spearhead an enterprise-scale Identity & Access Management (IAM) modernization, leading 12+ cross-functional engineers to deliver mission-critical, secure authentication platforms.</li>
+          </p>
+          <p>
+            <li><b>Agile Transformation:</b> Orchestrate SAFe PI planning for complex, multi-stakeholder initiatives, translating high-level business strategy into actionable roadmaps that ensure 100% architectural alignment.</li>
+          </p>
+          <p>
+            <li><b>AI-Driven Engineering:</b> Architect multi-agent AI frameworks for automated technical documentation and UI testing across complex platforms, accelerating release velocity while maintaining 100% test coverage and compliance.</li>
+          </p>
+          <p>
+            <li><b>Operational Excellence:</b> Modernized legacy systems onto Google Cloud and Transmit Security; achieved 100% uptime under 300K requests/minute load while maintaining strict NYDFS regulatory compliance.</li>
+          </p>
+             <p>
+            <li><b>Business Impact:</b> Delivered a Digital Self-Serve platform generating $2M+ in annual savings and optimized customer service workflows, reclaiming 280+ staff hours annually.</li>
+          </p>
+          <p>
+            <li><b>Risk Mitigation:</b> Championed LaunchDarkly for feature flag management across all releases, enabling safe phased rollouts by user segment —reducing deployment-related incidents by 40%.</li>
+          </p>
+           <p>
+            <li><b>Innovation:</b> Drove an "Engineering Excellence" culture by implementing trunk-based development and CI/CD, reducing release cycles from days to hours. Championed organizational AI adoption through internal hackathons and custom GenAI tool development.</li>
+          </p>
+          <div class="tech-tags">
+            <span class="tech-text-tag">Transmit Security</span>
+            <span class="tech-icon-tag" data-tip="Angular"><i class="devicon-angularjs-plain colored"></i></span>
+            <span class="tech-icon-tag" data-tip="Spring Boot"><i class="devicon-spring-plain colored"></i></span>
+            <span class="tech-icon-tag" data-tip="OAuth2"><i class="devicon-oauth-plain"></i></span>
+            <span class="tech-icon-tag" data-tip="Google Cloud"><i class="devicon-googlecloud-plain colored"></i></span>
+            <span class="tech-icon-tag" data-tip="MongoDB"><i class="devicon-mongodb-plain colored"></i></span>
+            <span class="tech-text-tag">PCF</span>
+            <span class="tech-text-tag">SAFe PI Planning</span>
+            <span class="tech-text-tag">NYDFS Compliance</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot teal"></div>
+        <div class="timeline-meta">Jan 2013 – Nov 2015 · ~3 Years</div>
+        <div class="timeline-role">Program Lead (Senior Associate)</div>
+        <div class="timeline-company">Cognizant Technology Solutions · College Station, TX / Bangalore, India</div>
+        <div class="timeline-client">⟶ Client: Celgene Corporation, Summit NJ</div>
+        <div class="timeline-content">
+          <p>
+            <li><b>Strategic Fiscal Management:</b> Directed a multi-workstream modernization portfolio, optimizing resource allocation to achieve a 12% reduction in total program costs. Secured $2M in executive-level funding by translating complex technical requirements into clear, ROI-driven business cases.</li>
+          </p>
+          <p>
+            <li><b>High-Risk Execution:</b> Led the high-stakes migration of Livelink 9.7.1 to Content Server 10.5 across 4 production systems; successfully executed with zero service disruption through meticulous impact analysis and risk mitigation.</li>
+          </p>
+           <p>
+            <li><b>Operational Transformation:</b> Architected automated data validation services using ASP.NET WCF and reusable C# utilities, delivering $700K in annual savings and a 30% increase in engineering throughput.</li>
+          </p>
+           <p>
+            <li><b>Governance & Quality:</b> Standardized delivery frameworks across ITIL, ISO 20k, and CMMI. Fostered a culture of excellence that resulted in an 18% improvement in customer satisfaction and a 35% increase in operational metrics.</li>
+          </p>
+           <p>
+            <li><b>Stakeholder Alignment:</b> Acted as the primary bridge between business, QA, and development teams, simplifying complex technical domains into actionable cross-functional roadmaps.</li>
+          </p>
+          <div class="tech-tags">
+            <span class="tech-text-tag">OpenText CS 10.5</span>
+            <span class="tech-icon-tag" data-tip="C#"><i class="devicon-csharp-plain colored"></i></span>
+            <span class="tech-icon-tag" data-tip="ASP.NET"><i class="devicon-dot-net-plain colored"></i></span>
+            <span class="tech-icon-tag" data-tip="SQL Server"><i class="devicon-microsoftsqlserver-plain colored"></i></span>
+            <span class="tech-text-tag">ITIL</span>
+            <span class="tech-text-tag">ISO 20k</span>
+            <span class="tech-text-tag">CMMI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot" style="background:var(--dim);box-shadow:none"></div>
+        <div class="timeline-meta">Pre-2013 · Earlier Career</div>
+        <div class="timeline-content" style="padding:1rem 1.5rem">
+          <ul class="exp-bullets">
+            <li><strong>Senior Consultant</strong> · Capgemini Consulting — Client: Philips IT Applications, MA &nbsp;(May 2010 – Jan 2013)</li>
+            <li><strong>Business Analyst</strong> · Essilor Manufacturing India Pvt. Ltd., Bangalore &nbsp;(Mar 2009 – Apr 2010)</li>
+            <li><strong>Senior Software Engineer</strong> · EffOne Technologies — Client: Metavante Corp, WI &nbsp;(Jun 2006 – Mar 2009)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section id="casestudies">
+  <div class="container">
+    <span class="section-label reveal">Featured Work</span>
+    <h2 class="section-title reveal">Programs I <span>shipped.</span></h2>
+    <p class="section-sub reveal">Concrete outcomes from complex, multi-stakeholder programs — the kind of work that doesn't fit neatly into bullet points.</p>
+    <div class="cases-grid">
+
+      <div class="case-card reveal">
+        <div class="case-top"></div>
+        <div class="case-body">
+          <div class="case-icon">🔐</div>
+          <span class="case-tag">IAM · Cloud Migration</span>
+          <h3 class="case-title">Login Management Modernization</h3>
+          
+          <div class="star-section">
+            <span class="star-label">📍 Situation</span>
+            <p class="star-content">A Fortune 500 financial services firm faced a critical bottleneck: their aging authentication infrastructure was becoming a liability. Legacy systems couldn't handle demand spikes during peak hours, were difficult to secure against evolving threats, and created friction for both web and mobile customers trying to access their accounts.</p>
+          </div>
+
+          <div class="star-section">
+            <span class="star-label">🎯 Task</span>
+            <p class="star-content">Lead a full-scale modernization program to migrate to a cloud-native identity platform. The challenge: coordinate across security, compliance, product, and engineering teams while maintaining <strong>zero downtime for 50M+ active users</strong>—any authentication failure is a business-critical incident.</p>
+          </div>
+
+          <div class="star-section">
+            <span class="star-label">⚡ Action</span>
+            <p class="star-content">I architected the migration in phases, minimizing risk at each step. We selected Transmit Security for multi-journey authentication (web, mobile, branch) and deployed to Google Cloud for enterprise-grade reliability. I established weekly coordination meetings across all stakeholders, created clear decision rights, and maintained executive dashboards showing progress and risk. We built comprehensive monitoring and automated rollback capabilities. I championed testing rigor—every change was validated against the entire user journey before hitting production.</p>
+          </div>
+
+          <div class="star-section">
+            <span class="star-label">✅ Result</span>
+            <p class="star-content"><strong>100% uptime</strong> post-migration with <strong>300K requests/minute sustained throughput</strong>. Enterprise-grade security posture with MFA, SAML, and OIDC support. This modernization became the foundation for all future identity-driven features and regulatory compliance initiatives. No customer-facing incidents. Timeline: on schedule.</p>
+          </div>
+          <br/>
+          <div class="case-metrics">
+            <span class="metric-chip">100% Uptime</span>
+            <span class="metric-chip">300K Req/Min</span>
+            <span class="metric-chip green">Zero Downtime Migration</span>
+          </div>
+          <div class="case-techs">
+            <span class="tech-text-tag">Transmit Security</span>
+            <span class="case-icon-tag" data-tip="Google Cloud"><i class="devicon-googlecloud-plain colored"></i></span>
+            <span class="case-icon-tag" data-tip="Angular"><i class="devicon-angularjs-plain colored"></i></span>
+            <span class="case-icon-tag" data-tip="Spring Boot"><i class="devicon-spring-plain colored"></i></span>
+            <span class="case-icon-tag" data-tip="OAuth2"><i class="devicon-oauth-plain"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-card reveal reveal-delay-1">
+        <div class="case-top"></div>
+        <div class="case-body">
+          <div class="case-icon">💰</div>
+          <span class="case-tag">Digital Transformation · Cost Savings</span>
+          <h3 class="case-title">Digital Self-Serve Mechanism</h3>
+          
+          <div class="star-section">
+            <span class="star-label">📍 Situation</span>
+            <p class="star-content">A critical business pain point: customer service teams were spending 30–40% of their time handling repetitive manual account management requests that could easily be automated. These bottlenecks created operational inefficiencies, longer wait times for customers, and frustration for both teams.</p>
+          </div>
+
+          <div class="star-section">
+            <span class="star-label">🎯 Task</span>
+            <p class="star-content">Design and deliver a self-serve platform that eliminates manual intervention while improving customer satisfaction. Success metrics: reduce support volume by at least 50%, generate measurable cost savings, and achieve high customer adoption within one quarter.</p>
+          </div>
+
+          <div class="star-section">
+            <span class="star-label">⚡ Action</span>
+            <p class="star-content">I led a full-stack engineering effort: <strong>Angular frontend</strong> for intuitive UX, <strong>Spring Boot backend</strong> for reliability, <strong>MongoDB</strong> for flexible data modeling. We deployed on Google Cloud with careful phasing to ensure adoption and minimize risk. I partnered with customer service to design workflows that matched their mental models. We invested heavily in onboarding and support so teams felt confident promoting the new tool.</p>
+          </div>
+
+          <div class="star-section">
+            <span class="star-label">✅ Result</span>
+            <p class="star-content"><strong>$2M+ in annualized cost savings</strong> through reduced headcount demand. <strong>Zero new hires required</strong> despite 15% growth in user base—the platform absorbed all incremental volume. Support volume dropped 60%. Measurable improvements in customer satisfaction scores. This project became an internal case study for how modern engineering practices translate directly to business value.</p>
+          </div>
+          <br/>
+          <div class="case-metrics">
+            <span class="metric-chip">$2M+ Annual Savings</span>
+            <span class="metric-chip green">Zero Headcount Added</span>
+            <span class="metric-chip">60% Support Reduction</span>
+          </div>
+          <div class="case-techs">
+            <span class="case-icon-tag" data-tip="Angular"><i class="devicon-angularjs-plain colored"></i></span>
+            <span class="case-icon-tag" data-tip="Spring Boot"><i class="devicon-spring-plain colored"></i></span>
+            <span class="case-icon-tag" data-tip=".NET Core"><i class="devicon-dotnetcore-plain colored"></i></span>
+            <span class="case-icon-tag" data-tip="MongoDB"><i class="devicon-mongodb-plain colored"></i></span>
+            <span class="tech-text-tag">PCF</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-card reveal reveal-delay-2">
+        <div class="case-top"></div>
+        <div class="case-body">
+          <div class="case-icon">🛡️</div>
+          <span class="case-tag">Regulatory Compliance · Security</span>
+          <h3 class="case-title">MFA Hardstop — NYDFS Compliance</h3>
+          
+          <div class="star-section">
+            <span class="star-label">📍 Situation</span>
+            <p class="star-content">NYDFS (New York Department of Financial Services) issued a regulatory mandate: all financial institutions must deploy mandatory multi-factor authentication by a specific deadline, or face financial penalties and license suspension. Our organization was significantly behind on this initiative, with no clear path to compliance.</p>
+          </div>
+
+          <div class="star-section">
+            <span class="star-label">🎯 Task</span>
+            <p class="star-content">Lead the MFA implementation program under a compressed timeline. Success = ship on the regulatory deadline without a single security incident or customer-facing disruption. Additional goal: use this as an opportunity to modernize authentication architecture, not just check a compliance box.</p>
+          </div>
+
+          <div class="star-section">
+            <span class="star-label">⚡ Action</span>
+            <p class="star-content">I took ownership and reframed the deadline as a strategic opportunity. I coordinated <strong>engineering, product, legal, compliance, and operations</strong>—teams that rarely worked together. <strong>Critically, I championed LaunchDarkly for feature flag management</strong>, enabling a phased rollout strategy: QA/staging validation → internal users → customer LOBs (wealth, banking, brokerage) → 100% production traffic. This approach reduced deployment risk dramatically. I championed security rigor while pushing for velocity and provided executive visibility through weekly status dashboards.</p>
+          </div>
+          
+          <div class="star-section">
+            <span class="star-label">✅ Result</span>
+            <p class="star-content"><strong>Shipped on regulatory deadline</strong> with <strong>zero missed commitments</strong>. <strong>Zero security incidents or customer disruptions</strong>. <strong>Reduced deployment-related incidents by 40%</strong> through LaunchDarkly's phased rollout strategy. Beyond compliance, the program yielded strategic wins: became the foundation for enterprise-grade security features, strengthened regulator relationships, and proved cross-functional teams could deliver excellence under pressure.</p>
+          </div>
+          <br/>
+          <div class="case-metrics">
+            <span class="metric-chip">NYDFS Compliant</span>
+            <span class="metric-chip green">Zero Deadline Miss</span>
+            <span class="metric-chip">Zero Incidents</span>
+            <span class="metric-chip">40% Risk Reduction</span>
+          </div>
+          <div class="case-techs">
+            <span class="tech-text-tag">MFA</span>
+            <!-- <span class="tech-text-tag">Transmit Security</span> -->
+            <span class="tech-text-tag">NYDFS Compliance</span>
+            <!-- <span class="tech-text-tag">Cross-Functional</span> -->
+            <span class="tech-text-tag">LaunchDarkly</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-card reveal reveal-delay-3">
+        <div class="case-top"></div>
+        <div class="case-body">
+          <div class="case-icon">🔑</div>
+          <span class="case-tag">Authentication · Operational Efficiency</span>
+          <h3 class="case-title">Branch Passcode Authentication</h3>
+          
+          <div class="star-section">
+            <span class="star-label">📍 Situation</span>
+            <p class="star-content">In-branch customer service representatives were spending disproportionate time on identity verification procedures—manual checks that felt like security theater to both reps and customers. This created wait times, customer frustration, and prevented reps from focusing on solving actual customer problems.</p>
+          </div>
+
+          <div class="star-section">
+            <span class="star-label">🎯 Task</span>
+            <p class="star-content">Design a lightweight authentication feature for in-person branches that simplifies identity verification while maintaining security. Ship within a single PI cycle (2–3 weeks). Success = measurable time savings for customer service reps and positive customer feedback.</p>
+          </div>
+
+          <div class="star-section">
+            <span class="star-label">⚡ Action</span>
+            <p class="star-content">I championed simplicity over complexity. We built a minimalist solution: <strong>Angular UI</strong> for customers to generate time-limited passcodes, verified via <strong>Transmit Security</strong> backend, stored securely in our identity system. The whole feature took <strong>2 weeks to ship</strong>. I partnered closely with branch operations teams to understand their workflows and ensure the feature fit seamlessly into their processes.</p>
+          </div>
+
+          <div class="star-section">
+            <span class="star-label">✅ Result</span>
+            <p class="star-content">Customer service representatives saved <strong>283.5 hours annually</strong> (equivalent to ~$40K in labor costs). Customers reported measurably higher satisfaction with in-branch experience. The feature became a template for other in-person authentication scenarios. Key lesson: highest-impact programs aren't always the most technically complex—they're the ones that solve real problems for real people.</p>
+          </div>
+          <br/>
+          <div class="case-metrics">
+            <span class="metric-chip">283.5 Hrs Saved/Year</span>
+            <span class="metric-chip green">CSR Efficiency</span>
+            <span class="metric-chip">2-Week Delivery</span>
+          </div>
+          <div class="case-techs">
+            <span class="tech-text-tag">Transmit Security</span>
+            <span class="case-icon-tag" data-tip="Angular"><i class="devicon-angularjs-plain colored"></i></span>
+            <span class="case-icon-tag" data-tip="Spring Boot"><i class="devicon-spring-plain colored"></i></span>
+            <span class="tech-text-tag">In-Branch Auth</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <span class="section-label reveal">Side Builds</span>
+    <h2 class="section-title reveal">AI agents I <span>built.</span></h2>
+    <p class="section-sub reveal">Beyond program delivery — tools I designed and shipped to solve real engineering problems.</p>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="proj-header">
+          <div class="proj-icon">📄</div>
+          <span class="proj-badge">AI Agent</span>
+        </div>
+        <div class="proj-name">AutoDoc</div>
+        <div class="proj-subtitle">Copilot Agent for Living Repository Documentation</div>
+        
+        <p class="proj-desc"><strong>What it does:</strong> AutoDoc is a GitHub Copilot agent skill that generates living documentation directly from source code analysis and intelligently publishes it to Confluence with full diagram support. Every time it runs, it scans for documentation gaps, detects doc drift, and automatically creates or updates documentation—keeping docs current and reducing manual maintenance overhead by 90%.</p>
+
+        <div style="margin-top: 1rem; font-size: 0.9rem; line-height: 1.7; color: var(--muted)">
+          <p style="margin-bottom: 0.7rem"><strong style="color: var(--text)">Architecture:</strong> Copilot Agent + SKILL.md framework | Confluence MCP integration | Jira MCP for tickets | Git Diff API for change tracking</p>
+
+          <p style="margin-bottom: 0.7rem"><strong style="color: var(--text)">Business Impact:</strong></p>
+          <ul style="margin-left: 1.2rem; list-style: none; padding: 0">
+            <li>• 90% reduction in documentation efforts</li>
+            <li>• 50% faster onboarding for new engineers</li>
+            <li>• PR risk surfacing through impact reports</li>
+            <li>• Cross-stack coverage (polyglot support)</li>
+          </ul>
+
+          <p style="margin-top: 0.7rem; margin-bottom: 0.7rem"><strong style="color: var(--text)">Key Features:</strong></p>
+          <ul style="margin-left: 1.2rem; list-style: none; padding: 0">
+            <li>• Polyglot stack support — analyzes any language</li>
+            <li>• Branch-aware change impact reports with flow diagrams</li>
+            <li>• Doc drift detection with actionable fix recommendations</li>
+            <li>• Jira + PR integration hooks for closed-loop automation</li>
+            <li>• Idempotent — safe to re-run on every commit</li>
+          </ul>
+          <!-- <p style="margin-top: 0.7rem"><strong style="color: var(--text)">Documentation Types Generated:</strong> API documentation | Architecture guides | Change impact analysis | Doc drift reports | Onboarding guides</p> -->
+        </div>
+        <br/>
+        <div class="case-techs">
+          <span class="case-icon-tag" data-tip="HTML5"><i class="devicon-html5-plain"></i></span>
+            <span class="case-icon-tag" data-tip="GitHub Copilot"> <i class="devicon-githubcodespaces-plain"></i></span>
+            <span class="case-icon-tag" data-tip="Confluence"><i class="devicon-confluence-plain"></i></i></span>
+            <span class="tech-text-tag">AI / LLM</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="proj-header">
+          <div class="proj-icon">🧪</div>
+          <span class="proj-badge">AI Agent</span>
+        </div>
+        <div class="proj-name">FlowGuard</div>
+        <div class="proj-subtitle">Lightweight End-to-End Testing Platform</div>
+        
+        <p class="proj-desc"><strong>What it does:</strong> FlowGuard is a next-gen E2E testing platform that automatically generates, executes, and maintains comprehensive test suites for Angular applications. It achieves enterprise-grade test coverage with a <strong>97.8% smaller footprint</strong> than traditional frameworks—only 1 npm package required, zero browser driver management, and zero infrastructure overhead.</p>
+
+        <div style="margin-top: 1rem; font-size: 0.9rem; line-height: 1.7; color: var(--muted)">
+          <p style="margin-bottom: 0.7rem"><strong style="color: var(--text)">Engineering Excellence:</strong></p>
+          <ul style="margin-left: 1.2rem; list-style: none; padding: 0">
+            <li>• 97.8% smaller footprint than Cypress/Playwright</li>
+            <li>• 97.5% fewer dependencies</li>
+            <li>• 74% less code</li>
+          </ul>
+
+          <p style="margin-top: 0.7rem; margin-bottom: 0.7rem"><strong style="color: var(--text)">Flexible Testing Methods:</strong></p>
+          <ul style="margin-left: 1.2rem; list-style: none; padding: 0">
+            <li>• Mock-based local testing (fast iteration)</li>
+            <li>• Release artifact testing (pre-production validation)</li>
+            <li>• Live environment testing (production confidence)</li>
+          </ul>
+
+          <p style="margin-top: 0.7rem; margin-bottom: 0.7rem"><strong style="color: var(--text)">Key Features:</strong></p>
+          <ul style="margin-left: 1.2rem; list-style: none; padding: 0">
+            <li>• Only 1 npm package required — zero external dependencies</li>
+            <li>• Browsers auto-managed — zero manual driver downloads</li>
+            <li>• Auth bypass via route interception — no infra needed</li>
+            <li>• Visual test-runner dashboard with real-time feedback</li>
+            <li>• Intelligent test generation from user flows</li>
+            <li>• Regression detection with screenshot diffing</li>
+          </ul>
+        </div>
+
+        <div class="case-techs">
+          <span class="case-icon-tag" data-tip="Angular"><i class="devicon-angularjs-plain"></i></span>
+          <span class="case-icon-tag" data-tip="Playwright"> <i class="devicon-playwright-plain"></i></span>
+          <span class="tech-text-tag">AI / LLM</span>
+          <span class="tech-text-tag">Test Automation</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <span class="section-label reveal">Capabilities</span>
+    <h2 class="section-title reveal">The full <span>stack.</span></h2>
+    <div class="skills-grid">
+      <div class="skill-group reveal"><div class="skill-group-title">IAM & Security</div><div class="skill-tags"><span class="skill-pill">OAuth2</span><span class="skill-pill">OpenID Connect</span><span class="skill-pill">SAML</span><span class="skill-pill">SSO</span><span class="skill-pill">MFA</span><span class="skill-pill">RBAC</span><span class="skill-pill">RBA</span><span class="skill-pill">Transmit Security</span><span class="skill-pill">Okta</span><span class="skill-pill">LDAP</span></div></div>
+      <div class="skill-group reveal reveal-delay-1"><div class="skill-group-title">Languages</div><div class="skill-tags"><span class="skill-pill">C#</span><span class="skill-pill">Core Java</span><span class="skill-pill">JavaScript</span><span class="skill-pill">VB.NET</span><span class="skill-pill">OScript</span></div></div>
+      <div class="skill-group reveal reveal-delay-2"><div class="skill-group-title">Frameworks</div><div class="skill-tags"><span class="skill-pill">.NET Core</span><span class="skill-pill">Angular</span><span class="skill-pill">Spring Boot</span><span class="skill-pill">ASP.NET</span><span class="skill-pill">ASP.NET MVC</span></div></div>
+      <div class="skill-group reveal"><div class="skill-group-title">Cloud & DevOps</div><div class="skill-tags"><span class="skill-pill">Google Cloud</span><span class="skill-pill">PCF</span><span class="skill-pill">CI/CD Pipelines</span><span class="skill-pill">Trunk-Based Dev</span><span class="skill-pill">GitHub Copilot</span></div></div>
+      <div class="skill-group reveal reveal-delay-1"><div class="skill-group-title">Data & ECM</div><div class="skill-tags"><span class="skill-pill">MongoDB Atlas</span><span class="skill-pill">SQL Server</span><span class="skill-pill">Oracle</span><span class="skill-pill">MySQL</span><span class="skill-pill">OpenText CS</span><span class="skill-pill">Livelink</span></div></div>
+      <div class="skill-group reveal reveal-delay-2"><div class="skill-group-title">Tools & Platforms</div><div class="skill-tags"><span class="skill-pill">JIRA</span><span class="skill-pill">ServiceNow</span><span class="skill-pill">Splunk</span><span class="skill-pill">Veracode</span><span class="skill-pill">SonarQube</span><span class="skill-pill">Bamboo</span><span class="skill-pill">JMeter</span><span class="skill-pill">Cucumber</span><span class="skill-pill">Harness</span><span class="skill-pill">Remedy</span></div></div>
+      <div class="skill-group reveal"><div class="skill-group-title">Dev Tools & Repos</div><div class="skill-tags"><span class="skill-pill">Visual Studio</span><span class="skill-pill">VS Code</span><span class="skill-pill">IntelliJ</span><span class="skill-pill">Bitbucket</span><span class="skill-pill">Git</span><span class="skill-pill">TFS</span><span class="skill-pill">SVN</span></div></div>
+      <div class="skill-group reveal reveal-delay-1"><div class="skill-group-title">Feature & Release Management</div><div class="skill-tags"><span class="skill-pill">LaunchDarkly</span><span class="skill-pill">Feature Flags</span><span class="skill-pill">Phased Rollouts</span><span class="skill-pill">Canary Releases</span><span class="skill-pill">A/B Testing</span><span class="skill-pill">Tenant Configuration</span></div></div>
+      <div class="skill-group reveal reveal-delay-1"><div class="skill-group-title">Methodologies</div><div class="skill-tags"><span class="skill-pill">Agile</span><span class="skill-pill">SAFe</span><span class="skill-pill">Scrum</span><span class="skill-pill">PI Planning</span><span class="skill-pill">ITIL</span><span class="skill-pill">Six Sigma</span><span class="skill-pill">CMMI</span><span class="skill-pill">TDD</span><span class="skill-pill">Lean</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="container">
+    <span class="section-label reveal">Credentials</span>
+    <h2 class="section-title reveal">Certifications.</h2>
+    <div class="certs-grid">
+      <div class="cert-card reveal"><div class="cert-icon">🤖</div><div class="cert-name">Generative AI Overview for Project Managers</div><div class="cert-issuer">Project Management Institute (PMI)</div></div>
+      <div class="cert-card reveal reveal-delay-1"><div class="cert-icon">⚙️</div><div class="cert-name">ITIL v3 Foundation</div><div class="cert-issuer">Cert No. 26113-649541</div></div>
+      <div class="cert-card reveal reveal-delay-2"><div class="cert-icon">📊</div><div class="cert-name">Certified Six Sigma Yellow Belt</div><div class="cert-issuer">ASQ</div></div>
+      <div class="cert-card reveal reveal-delay-3"><div class="cert-icon">🔬</div><div class="cert-name">Introduction to Data Science</div><div class="cert-issuer">Cisco Networking Academy</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <span class="section-label reveal" style="display:block;text-align:center">Get In Touch</span>
+      <h2 class="section-title reveal" style="text-align:center">Let's <span>connect.</span></h2>
+      <p class="section-sub reveal">Open to senior TPM roles, fractional engagements, and interesting conversations about platform modernization and AI-powered tooling.</p>
+      <div class="contact-links reveal">
+        <a href="mailto:shabbeer.shaik@outlook.com" class="contact-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          shabbeer.shaik@outlook.com
+        </a>
+        <a href="https://www.linkedin.com/in/shabbir-ahmed-shaik-9a43192b/" target="_blank" class="contact-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="tel:+18482562189" class="contact-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.81-1.81a2 2 0 0 1 2.11-.45 10.47 10.47 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +1 (848) 256-2189
+        </a>
+        <a href="resume.pdf" download="ShabbirAhmedShaik_Resume.pdf" class="contact-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M6 6l6-4 6 4M6 18l6 4 6-4"/></svg>
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>Built by <span>Shabbir Ahmed Shaik</span> · Technical Program Manager & Builder · Austin, TX</footer>
+
+<script>
+(function(){
+  const canvas=document.getElementById('hero-canvas'),ctx=canvas.getContext('2d');
+  let W,H,dots,mouse={x:-9999,y:-9999};
+  const SPACING=38,RADIUS=1.2,MAX_DIST=160,ACCENT=[74,158,255],ACCENT2=[0,212,180];
+  function resize(){W=canvas.width=canvas.offsetWidth;H=canvas.height=canvas.offsetHeight;buildDots()}
+  function buildDots(){dots=[];const cols=Math.ceil(W/SPACING)+1,rows=Math.ceil(H/SPACING)+1;for(let r=0;r<rows;r++)for(let c=0;c<cols;c++)dots.push({x:c*SPACING,y:r*SPACING,ox:c*SPACING,oy:r*SPACING,vx:0,vy:0})}
+  function lerp(a,b,t){return a+(b-a)*t}
+  function lc(c1,c2,t){return[Math.round(lerp(c1[0],c2[0],t)),Math.round(lerp(c1[1],c2[1],t)),Math.round(lerp(c1[2],c2[2],t))]}
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    const g=ctx.createRadialGradient(W/2,H/2,0,W/2,H/2,W*0.7);
+    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    if (isLight) {
+      g.addColorStop(0,'rgba(27,58,107,0.08)');g.addColorStop(1,'rgba(255,255,255,0)');
+    } else {
+      g.addColorStop(0,'rgba(27,58,107,0.18)');g.addColorStop(1,'rgba(7,11,23,0)');
+    }
+    ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+    for(const d of dots){
+      const dx=mouse.x-d.x,dy=mouse.y-d.y,dist=Math.sqrt(dx*dx+dy*dy);
+      const force=Math.max(0,(MAX_DIST-dist)/MAX_DIST),t=force*force;
+      if(force>0){d.vx-=dx/dist*force*2.5;d.vy-=dy/dist*force*2.5}
+      d.vx+=(d.ox-d.x)*0.08;d.vy+=(d.oy-d.y)*0.08;d.vx*=0.82;d.vy*=0.82;d.x+=d.vx;d.y+=d.vy;
+      const col=lc(ACCENT,ACCENT2,t);
+      ctx.beginPath();ctx.arc(d.x,d.y,RADIUS+t*2.2,0,Math.PI*2);
+      ctx.fillStyle=`rgba(${col[0]},${col[1]},${col[2]},${0.12+t*0.55})`;ctx.fill();
+    }
+    requestAnimationFrame(draw);
+  }
+  window.addEventListener('resize',resize);
+  window.addEventListener('mousemove',e=>{const r=canvas.getBoundingClientRect();mouse.x=e.clientX-r.left;mouse.y=e.clientY-r.top});
+  window.addEventListener('mouseleave',()=>{mouse.x=-9999;mouse.y=-9999});
+  resize();draw();
+})();
+
+(function(){
+  const lines=['Modernizing enterprise platforms.','Leading distributed engineering teams.','Shipping programs that move metrics.','Building AI agents that save hours.','Bridging strategy and execution.'];
+  let li=0,ci=0,del=false,el=document.getElementById('typewriter');
+  function tick(){
+    const line=lines[li];
+    if(!del){el.textContent=line.slice(0,++ci);if(ci===line.length){del=true;setTimeout(tick,2000);return}}
+    else{el.textContent=line.slice(0,--ci);if(ci===0){del=false;li=(li+1)%lines.length;setTimeout(tick,400);return}}
+    setTimeout(tick,del?35:60);
+  }
+  setTimeout(tick,1200);
+})();
+
+(function(){
+  const nav=document.getElementById('navbar');
+  window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>60));
+})();
+
+(function(){
+  const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')}),{threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+})();
+
+(function(){
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(!e.isIntersecting)return;
+      const el=e.target,target=+el.dataset.count,prefix=el.dataset.prefix||'',suffix=el.dataset.suffix||'';
+      const steps=60,inc=target/steps;let cur=0,step=0;
+      const t=setInterval(()=>{step++;cur=Math.min(step*inc,target);el.textContent=prefix+(Number.isInteger(target)?Math.round(cur):cur.toFixed(1))+suffix;if(step>=steps)clearInterval(t)},1800/60);
+      obs.unobserve(el);
+    });
+  },{threshold:0.5});
+  document.querySelectorAll('.num[data-count]').forEach(c=>obs.observe(c));
+})();
+
+/* THEME TOGGLE */
+(function(){
+  const html = document.documentElement;
+  const toggle = document.getElementById('theme-toggle');
+  const dot = toggle.querySelector('.theme-toggle-dot');
+  const STORAGE_KEY = 'portfolio-theme';
+  
+  // Initialize theme from localStorage or system preference
+  const savedTheme = localStorage.getItem(STORAGE_KEY);
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const initialTheme = savedTheme || (prefersDark ? 'dark' : 'dark'); // Default to dark
+  
+  function setTheme(theme) {
+    if (theme === 'light') {
+      html.setAttribute('data-theme', 'light');
+      dot.textContent = '☀️';
+      localStorage.setItem(STORAGE_KEY, 'light');
+    } else {
+      html.removeAttribute('data-theme');
+      dot.textContent = '🌙';
+      localStorage.setItem(STORAGE_KEY, 'dark');
+    }
+  }
+  
+  // Set initial theme
+  setTheme(initialTheme);
+  
+  // Toggle on click
+  toggle.addEventListener('click', () => {
+    const currentTheme = html.getAttribute('data-theme') || 'dark';
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+  });
+})();
+</script>
+</body>
+</html>
